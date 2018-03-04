@@ -1,0 +1,404 @@
+@font-face{
+	font-family: Gotham-Black;
+	src:url("../font/Gotham-Black.otf");
+}
+@font-face{
+	font-family: Gotham-BlackItalic;
+	src:url("../font/Gotham-BlackItalic.otf");
+}
+@font-face{
+	font-family: Gotham-Medium;
+	src:url("../font/Gotham-Medium.otf");
+}
+@font-face{
+	font-family: Gotham-MediumItalic;
+	src:url("../font/Gotham-MediumItalic.otf");
+}
+@font-face{
+	font-family: Gotham-Light;
+	src:url("../font/Gotham-Light.otf");
+}
+@font-face{
+	font-family: Gotham-LightItalic;
+	src:url("../font/Gotham-LightItalic.otf");
+}
+@font-face{
+	font-family: Gotham-Bold;
+	src:url("../font/Gotham-Bold.otf");
+}
+@font-face{
+	font-family: Gotham-BoldItalic;
+	src:url("../font/Gotham-BoldItalic.otf");
+}
+@font-face{
+	font-family: Gotham-Book;
+	src:url("../font/Gotham-Book.otf");
+}
+@font-face{
+	font-family: Gotham-BookItalic;
+	src:url("../font/Gotham-BookItalic.otf");
+}
+	
+
+header{
+	background-color:white;
+}
+a{
+	color: black;
+	text-decoration: none;
+
+}
+nav{
+	background-color:white;
+}
+li{
+	list-style:none;
+	display:block;
+	float:left;
+}
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color:white;
+
+}
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: orange;
+    overflow-x: hidden;
+    padding-top: 40px;
+}
+
+.sidenav {
+	a {
+    padding: 8px 8px 8px 16px;
+    text-decoration: none;
+    font-size: 10px;
+    color: white;
+    display: block;
+   
+
+  }
+  li{
+  	font-size:10px;
+  	color: white;
+
+  }
+}
+
+
+.sidenav .closebtn  {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 22px;
+    margin-left: 10px;
+    transition:0.1ms;
+}
+.menu{
+	font-size:15px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+#right-nav {
+  li{
+	a{
+	padding: 0px;
+	margin: 0px;
+	position:relative;
+	display: block;
+	font-size:15px;
+	padding-right:25px;
+	padding-top: 10px;
+	transition:0.1ms;
+    }
+    span{
+    	font-size:15px;
+    }
+  }
+
+}
+@media screen and (max-width:400px){
+	#right-nav {
+		li a{font-size: 8px; padding-top:3px; padding-right:5px;}
+		span{
+			font-size:5px;
+		}
+	}
+}
+%bannerText{
+	 position: absolute;
+    top:250px;
+    bottom: 0px;
+    left: 40px;
+    color: white;
+    font-size:30px;
+}
+@media screen and (max-width:400px){
+	.mozesText {
+	position: absolute;
+    top: 100px;
+    bottom: 0px;
+    left: 59px;
+    color: white;
+    font-size: 12px;
+
+	}
+
+}
+
+.mozesText{
+ @extend %bannerText;
+ p{
+		margin:0px;
+		font-family:Gotham-Light;
+		
+	}
+	span{
+		color: white;
+		font-size:10px;
+	}
+}
+
+.mozesBanner{
+	position: relative;
+    text-align: center;
+}
+.raulText{
+    position: absolute;
+    bottom: 58px;
+    right: 147px;
+    top: 232px;
+    background-color: transparent;
+    border: 2px solid white;
+    color: white;
+    font-size: 25px;
+    width: 29%;
+    height: 47%;
+    border-radius: 50%;
+
+    p{
+    top: 10px;
+    right: 10px;
+    margin-bottom: 1px;
+    padding: 76px 43px 5px 90px;
+    font-family: Gotham-Book;
+    }
+	
+	span{
+	color: white;
+    font-size: 10px;
+    padding: 68px;
+    margin: 38px;
+	}
+}
+@media screen and (max-width:400px){
+	.raulText{
+	position: absolute;
+    bottom: 47px;
+    right: 70px;
+    top: 5px;
+    background-color: transparent;
+    border: 2px solid white;
+    color: white;
+    font-size: 14px;
+    width: 58%;
+    height: 96%;
+    border-radius: 50%;
+
+   p{
+   	top: 15px;
+    right: 2px;
+    margin-bottom: 1px;
+    padding: 26px 9px 1px 8px;
+    font-family: Gotham-Book;
+   }
+   span{
+   	color: white;
+    font-size: 8px;
+    padding: 0px;
+    margin: 25px;
+   }
+	}
+}
+.kingText{
+	@extend %bannerText;
+	p{
+		margin:-10px;
+		font-family:Gotham-LightItalic;
+	}
+	span{
+		color: white;
+		font-size:10px;
+	}
+}
+@media screen and (max-width:400px){
+	.kingText{
+	position: absolute;
+    top: 37px;
+    bottom: 0px;
+    left: 74px;
+    color: white;
+    font-size: 17px;
+	}
+}
+.theRecipe{
+	text-align:center;
+	li{
+		text-align:left;
+		float:none;
+		display:block;
+		text-decoration:none;
+		margin-top:5px;
+	}
+    h2{
+    	font-family: Gotham-Bold;
+    }
+    h4{
+    	font-family:Gotham-Black;
+    }
+
+}
+%dashedBorder{
+	border-top:dashed;
+	border-width:1px;
+	border-color:black;
+	margin-top:5px;
+	margin-bottom:5px;
+
+}
+.ingredients{
+	@extend %dashedBorder;
+	li{
+		font-family: Gotham-Light;
+	}
+}
+@media screen and (max-width:400px){
+	.ingredients{
+		li{
+			text-align:left;
+		}
+	}
+}
+.makingSteps{
+	@extend %dashedBorder;
+	p{
+      font-family: Gotham-Medium;
+      line-height: 40px;
+	}
+}
+@media screen and (max-width:400px){
+	.makingSteps{
+		p{
+		line-height:20px;
+	    }
+	}
+}
+.dots{
+	height: 40px;
+    width: 40px;
+    background-color: orange;
+    border-radius: 50%;
+    display: inline-block;
+    border: 2px solid black;
+    color:black;
+}
+.footer{
+	background-color:lightgray;
+	margin-top:30px;
+	padding-top:20px;
+	padding-bottom:30px;
+	margin-bottom:70px;
+}
+.mediaIcons{
+	padding-bottom:10px;
+	li{
+		padding-left:15px;
+	}
+}
+.copyrights{
+	border-top:solid;
+	border-width:1px;
+	border-color:black;
+	padding-top:10px;
+	margin-left:10px;
+	margin-right: 10px;
+	margin-bottom:10px;
+	li{
+		padding-left:20px;
+		font-family: Gotham-Medium;
+		font-size:12px;
+	}
+}
+
+// login modal
+
+#login-modal .modal-dialog {
+    width: 350px;
+}
+
+#login-modal  {
+	margin-top: 10px;
+}
+#login_username{
+	margin-bottom:5px;
+	padding-bottom:5px;
+}
+#register_username{
+	margin-bottom:5px;
+}
+#register_password{
+	margin-bottom:5px;
+}
+
+
+#img_logo {
+    max-height: 100px;
+    max-width: 100px;
+}
+
+
+ // override the bootstrap configs
+
+
+.modal-backdrop.in {
+    filter: alpha(opacity=50);
+    opacity: .8;
+}
+
+.modal-content {
+    background-color: #ececec;
+    border: 1px solid #bdc3c7;
+    border-radius: 0px;
+    outline: 0;
+}
+
+.modal-header {
+    min-height: 16.43px;
+    padding: 15px 15px 15px 15px;
+    border-bottom: 0px;
+}
+
+.modal-body {
+    position: relative;
+    padding: 5px 15px 5px 15px;
+}
+
+.modal-footer {
+    padding: 15px 15px 15px 15px;
+    text-align: left;
+    border-top: 0px;
+}
+
+.checkbox {
+    margin-bottom: 0px;
+}

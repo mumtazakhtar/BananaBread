@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>The Banana Bread</title>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script type="text/javascript" src="http://code.jquery.com/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
+    
+</head>
+<body>
+	<div class="container-fluid" >
+	    <header class="navbar-fixed-top">
+			<nav class="navbar-primary">
+				<div class="rows">
+					<div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+						<div id="mySidenav" class="sidenav">
+						    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">
+						    <img src="./svg/Menu_icon.svg" style="width:20%; margin-top: 10px;">
+						     Close</a>   
+						       <ul class="items" />
+						</div>
+						<script type="text/javascript" src="./js/menu.js"></script>
+						<span style="cursor:pointer;" onclick="openNav()" class="menu">
+						  <img src="./svg/Menu_icon.svg" style="width:10%; margin-top: 10px;"> 
+						  Menu
+						</span>
+						<script type="text/javascript" src="./js/index.js"></script>
+					</div>
+					<div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+						<img src="./svg/BB_Logo.svg" style="width:50%; margin-bottom: -10px;">
+					</div>
+					<div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+						<ul class="nav navbar-primary navbar-right" id="right-nav">
+							<li>
+								<a href="#">Contact</a>
+							</li>
+							<li>
+								<a href="#" class="" role="button" data-toggle="modal" data-target="#login-modal">Login</a>
+							</li>
+						</ul>
+					</div>			  
+			   </div>
+			</nav>
+	    </header>
+    </div> <!--Header and navigation-->
+   
+   <!--Light box modal Login form-->
+   <div class="modal fade" id="login-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="display: none;">
+    	<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header" align="center">
+					<img class="" id="img_logo" src="./svg/BB_Logo.svg" style="width:25%">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span class="glyphicon glyphicon-remove" aria-hidden="true"></span>
+					</button>
+				</div>
+                
+                <!-- Begin # DIV Form -->
+                <div id="div-forms">
+                
+                    <!-- Begin # Login Form -->
+                    <form id="login-form">
+		                <div class="modal-body">
+				    		
+				    			<h4 style="text-align:center;"> LOGIN </h4>
+                                
+                           
+				    		<input id="login_username" class="form-control" type="email" placeholder=" Email address" required>
+				    		<input id="login_password" class="form-control" type="password" placeholder="Password" required>
+                            <div class="checkbox">
+                                <label>
+                                    <input type="checkbox"> Remember me
+                                </label>
+                            </div>
+        		    	</div>
+				        <div class="modal-footer">
+                            <div>
+                                <button type="submit" class="btn btn-primary btn-lg btn-block">Login</button>
+                            </div>
+				    	    <div>
+                                <button  type="button" class="btn btn-link">Forgot Password?</button>
+                                <button id="login_register_btn" type="button" class="btn btn-link">Register</button>
+                            </div>
+				        </div>
+                    </form>
+
+                    <form id="register-form" style="display:none;">
+            		    <div class="modal-body">
+		    				<div id="div-register-msg">
+                                <div id="icon-register-msg" class="glyphicon glyphicon-chevron-right"></div>
+                                <span id="text-register-msg">Create  an account here</span>
+                            </div>
+		    				<input id="register_username" class="form-control" type="email" placeholder="Email address" required>
+                            <input id="register_password" class="form-control" type="password" placeholder="Password" required>
+                            <input id="register_password" class="form-control" type="password" placeholder="Confirm Password" required>
+            			</div>
+		    		    <div class="modal-footer">
+                            <div>
+                                <button type="submit" class="btn btn-primary btn-lg btn-block">Register</button>
+                            </div>
+                            <div>
+                                <button id="register_login_btn" type="button" class="btn btn-link">Log In</button>
+                                
+                            </div>
+		    		    </div>
+                    </form>
+                 </div>
+            </div>
+        </div>
+    </div>
+
+    <script type="text/javascript" src="./js/loginForm.js"></script>
+
+   <!-- Banners -->
+	<div class="container-fluid mozesBanner">
+		<div class="rows">
+			<div class="col-lg-12">
+			  <img src="./images/Mozes.png" style="max-width:100%; width:100%">
+			  <div class="mozesText">
+			  	<caption><p><q> Why compromise <br>the banana flavour?</p></q></caption>
+			  	<span style="font-family:">Moses | Mozambique | 6 years old</span>
+			  </div>
+			  
+			</div>
+		</div>
+	</div> <!-- first banner -->
+	<div class="container-fluid raulBanner">
+		<div class="rows">
+			<div class="col-lg-12">
+				<img src="./images/Raoul.png"  style="max-width:100%; width:100%">
+				<div class="circle">
+				<div class="raulText" id="">
+			  	<caption><p> This banana bread is moist and delicious with loads of banana flavor!</p></caption>
+			  	<span style="font-family:">Raoul | Indonesia | 3 years old</span>
+			    </div>
+			  </div>
+			  
+			</div>
+		</div>
+	</div> <!-- second banner -->
+	<div class="container-fluid kingBanner">
+		<div class="rows">
+			<div class="col-lg-12">
+				<img src="./images/King.png"  style="max-width:100%; width:100%">
+				<div class="circle">
+					<div class="kingText">
+				  	<caption><p><q> It is a wonderful<br> standard recipe that<br> you can build upon<br> and customize to<br> your liking.</p></q></caption>
+				  	<span style="font-family:">King | Kenya | 8 years old</span>
+
+			  </div>
+			  </div>
+			</div>
+		</div>
+	</div> <!-- third banner -->
+    
+    <!-- The recipe -->
+	<div class="theRecipe">
+		<div class="container">
+    	    <h2><b> The Recipe </b></h2>
+    	    <p>Prep:15min | Cook:1h5min
+
+    	    <h4><b> What you need</b> </h4>
+
+    	    <div class="rows ingredients">
+    	    	<div class="col-lg-3"></div>
+    	    	<div class="col-lg-3">
+    	    		<ul>
+    	    			<li> 2 cups all-purpose flour </li>
+    	    			<li> 1 teaspoon baking soda </li>
+    	    			<li> 1/4 teaspoon salt </li>
+    	    			<li> 1/2 cup butter </li>
+    	    		</ul>
+    	    		
+    	    	</div>
+
+    	    	<div class="col-lg-1"></div>
+    	    	<div class="col-lg-4">
+    	    		<ul>
+    	    			<li> 3/4 cup brown sugar </li>
+    	    			<li> 2 eggs, beaten </li>
+    	    			<li> 21/3 cups mashed overripe bananas </li>
+    	    			<li> 1 cup of love and care </li>
+    	    		</ul>
+    	    		
+    	    	</div>
+    	    	<div class="col-lg-1"></div>
+    	    </div> <!-- ingredients required -->
+    	</div>
+        
+        <div class="container">
+            <div class="rows">
+    	    	<div class="makingSteps">
+    	    		<div class="col-lg-2"></div>
+    	    		<div class="col-lg-8">
+	    	    	<h4> <b>How to make it</b> </h4>
+	    	    	<p class="dots"> 1 </p>
+	    	    	<p> Preheat oven to 350 degrees F (175 degrees C). Lightly grease a 9x5 inch loaf pan.</p>
+	    	    	<p class="dots"> 2 </p>
+	    	    	<p>In a large bowl, combine flour, baking soda and salt. In a separate bowl, cream together butter and brown sugar. Stir in eggs and mashed bananas until well blended. Stir banana mixture into flour mixture; stir just to moisten. Pour batter into prepared loaf pan.</p>
+    	    	    <p class="dots"> 3 </p>
+    	    	    <p>Bake in preheated oven for 60 to 65 minutes, until a toothpick inserted into center of the loaf comes out clean. Let bread cool in pan for 10 minutes, then turn out onto a wire rack</p>
+    	    	    <p style="border-top:dashed; border-width:1px; border-color: lightgray; padding-top: 10px; font-size: 10px; font-family:Gotham-Light">Tip: Aluminum foil can be used to keep food moist, cook it evenly and make clean up easier.</p>
+    	    	    </div>
+    	    	    <div class="col-lg-2"></div>
+    	    	</div>
+    	    </div>
+    	</div><!-- making steps-->
+
+    </div> <!-- the recipe -->
+
+    <!-- Media icons and copy rights -->
+    <footer>
+    	<div class="container-fluid footer">
+	    	<div class="container mediaIcons">
+	    		<div class="rows">
+	    			<div class="col-lg-2"></div>
+	    			<div class="col-lg-2" style="text-align: center">
+                      FOLLOW US ON:
+	    			</div>
+	    			<div class="col-lg-4"></div>
+	    			<div class="col-lg-4">
+			            <ul>
+	    					<li><img src="./svg/Facebook.svg"></li>
+	    					<li><img src="./svg/Youtube.svg"></li>
+	    					<li><img src="./svg/Twitter.svg"></li>
+	    					<li><img src="./svg/Pinterest.svg"></li>
+	    					<li><img src="./svg/Instagram.svg"></li>
+	    				</ul>
+	    			</div>
+	    	    </div>
+	    			
+	    	</div><!--media icons-->
+	    	<div class="container copyrights">
+	    		<div class="rows">
+	    			<div class="col-lg-1"></div>
+	    			<div class="col-lg-10" style="text-align: center">
+	    				<ul>
+	    					<li>Copyright ©2017Bananabreadinc.</li>
+	    					<li> All rights reserved</li>
+	    					<li>Privacy Policy</li>
+	    					<li>Cookie Policy</li>
+	    					<li>Terms of Use</li>
+	    					<li>Terms & Conditions</li>
+	    				</ul>
+	    			</div>
+	    			<div class="col-lg-1"></div>
+	    		</div>
+	    	</div><!--copy rights-->
+	    </div>
+    </footer>
+
+</body>
+</html>
